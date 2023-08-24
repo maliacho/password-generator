@@ -1,5 +1,12 @@
 // Assignment Code
-var generateBtn = document.querySelector("#generate");
+let generateBtn = document.querySelector("#generate");
+
+let generatePassword = function () {
+  let charNumber = prompt("How many characters will your password contain?")
+  if (charNumber < 4 && charNumber > 15) {
+    alert("Please enter a number between 4 and 15.");
+  }
+}
 
 // Write password to the #password input
 function writePassword() {
@@ -20,3 +27,4 @@ generateBtn.addEventListener("click", writePassword);
   //any lowercase
   //any uppercase
 //display password in textbox
+
