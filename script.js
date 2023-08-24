@@ -2,15 +2,22 @@
 let generateBtn = document.querySelector("#generate");
 
 
-const passwordCriteria = {
-  lowers: "qwetyuiopasdfghjklzxcvbnm",
-  uppers: "QWERTYUIOPASDFGHJKLZXCVBNM",
-  special: "!@#$%&?",
-  numbers: "123456789",
-}
+// const passwordCriteria = {
+//   lowers: "qwetyuiopasdfghjklzxcvbnm",
+//   uppers: "QWERTYUIOPASDFGHJKLZXCVBNM",
+//   special: "!@#$%&?",
+//   numbers: "123456789",
+// }
 
 function generatePassword () {
-  prompt("Would you like to include lowercase letters?")
+  const lowers = "qwetyuiopasdfghjklzxcvbnm";
+  const uppers = "QWERTYUIOPASDFGHJKLZXCVBNM";
+  const special = "!@#$%&?";
+  const numbers = "123456789";
+  confirm("Would you like to include lowercase letters?");
+  confirm("Would you like to include uppercase letters?");
+  confirm("Would you like to include special characters?");
+  confirm("Would you like to include numbers?");
 }
 
 
