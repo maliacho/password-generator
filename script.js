@@ -10,48 +10,56 @@ function generatePassword () {
     let characters = ["!", "@", "#", "$", "%", "^", "&", "*", "?"];
     let numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
-    // variable with undefined value to store user input
-    let userResults = "";
+    // empty array to store user input
+    let userResults = [];
 
+    let possiblePassword = "";
+
+    // validate password length 
     function passwordLength () {
       let length = prompt("How many characters would you like in your password?")
       if (length < 8 || length > 128 || length == "") {
         alert("Please choose a number between 8 and 128.");
         passwordLength();
       }
-    }
+    };
+    passwordLength();
 
 
   // Prompt the user for the password criteria
+    function userChoices () {
     let userLower = confirm("Would you like to include lowercase letters?")
     let userUpper = confirm("Would you like to include uppercase letters?")
     let userCharacters = confirm("Would you like to include special characters?")
     let userNumbers = confirm("Would you like to include numbers?")
-
-  // Validate input
-    let userSelections = false; {
-    while (userSelections = false) 
-      if (userLower) {
-      userResults.concat(lowerCase)
+      // Validate input
+      if (userLower === false && userUpper === false && userCharacters === false && userCharacters === false && userNumbers === false) {
+        alert("You must select at least one option.")
       };
-      if (userUpper) {
-      userResults.concat(upperCase)
-      };
-      if (userCharacters) {
-        userResults.concat(characters)
-      };
-      if (userNumbers) {
-        userResults.concat(numbers)
-      };
+      userChoices();
     };
-
+    userChoices();
+    
   //Generate password
-
+    if (userLower == true) {
+      userResults.concat(lowerCase)
+    };
+    if (userUpper == true) {
+      userResults.concat(upperCase)
+      ;
+    if (userCharacters == true) {
+      userResults.concat(characters)
+    };
+    if (userNumbers == true) {
+      userResults.concat(numbers)
+    };
+    };
   // Display password in the textbox
-  // return "Generated Password will go here!"
+ for (var i = 0; i < length; i++) {
+  userResults = possiblePassword[Math.floor(math.random() * userResults.length)];
+ };
+ return possiblePassword;
 }
-
-
 
 // Write password to the #password input
 function writePassword() {
