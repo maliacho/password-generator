@@ -22,7 +22,7 @@ It took me quite a while to start to get a handle on how to format the JavaScrip
 
 #### Screenshot
 I took a screen recording but had trouble adding it. 
-
+<img width="1250" alt="screenshot" src="https://github.com/maliacho/password-generator/assets/141271179/e04b21fe-8e30-4800-ab83-ad1057824f85">
 
 ##### Technologies Used
 JavaScript to write the code for the password generator.
