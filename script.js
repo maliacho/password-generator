@@ -5,19 +5,24 @@ let generateBtn = document.querySelector("#generate");
 function generatePassword () {
  
   // Allowed items for password creation
-    // let length = [8];
     let lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
     let upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
     let characters = ["!", "@", "#", "$", "%", "^", "&", "*", "?"];
     let numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
-    // empty array to store user input
-    let userResults = [];
+    // variable with undefined value to store user input
+    let userResults = "";
+
+    function passwordLength () {
+      let length = prompt("How many characters would you like in your password?")
+      if (length < 8 || length > 128 || length == "") {
+        alert("Please choose a number between 8 and 128.");
+        passwordLength();
+      }
+    }
+
 
   // Prompt the user for the password criteria
-    // password length (8-128)
-    // let userLength = prompt("How long would you like your password?")
-    // lowercase, uppercase, numbers, special characters
     let userLower = confirm("Would you like to include lowercase letters?")
     let userUpper = confirm("Would you like to include uppercase letters?")
     let userCharacters = confirm("Would you like to include special characters?")
