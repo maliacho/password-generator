@@ -2,13 +2,6 @@
 let generateBtn = document.querySelector("#generate");
 
 
-// const passwordCriteria = {
-//   lowers: "qwetyuiopasdfghjklzxcvbnm",
-//   uppers: "QWERTYUIOPASDFGHJKLZXCVBNM",
-//   special: "!@#$%&?<>/\=+-",
-//   numbers: "0123456789",
-// }
-
 function generatePassword () {
  
   // Allowed items for password creation
