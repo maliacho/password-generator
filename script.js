@@ -56,9 +56,9 @@ function generatePassword () {
     };
   // Display password in the textbox
  for (var i = 0; i < length; i++) {
-  userResults = possiblePassword[Math.floor(math.random() * userResults.length)];
+  return possiblePassword[Math.floor(math.random() * userResults.length)];
  };
- return possiblePassword;
+
 }
 
 // Write password to the #password input
