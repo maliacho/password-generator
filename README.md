@@ -21,7 +21,6 @@ THEN the password is either displayed in an alert or written to the page
 It took me quite a while to start to get a handle on how to format the JavaScript file. I read many pages of MDN documentation and Google searches, but was unable to get the password generator to actually work. 
 
 #### Screenshot
-I took a screen recording but had trouble adding it. 
 <img width="1250" alt="screenshot" src="https://github.com/maliacho/password-generator/assets/141271179/e04b21fe-8e30-4800-ab83-ad1057824f85">
 
 ##### Technologies Used
