@@ -12,6 +12,7 @@ let generateBtn = document.querySelector("#generate");
 function generatePassword () {
  
   // Allowed items for password creation
+    // let length = [8];
     let lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
     let upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
     let characters = ["!", "@", "#", "$", "%", "^", "&", "*", "?"];
@@ -22,7 +23,7 @@ function generatePassword () {
 
   // Prompt the user for the password criteria
     // password length (8-128)
-    let userLength = prompt("How long would you like your password?")
+    // let userLength = prompt("How long would you like your password?")
     // lowercase, uppercase, numbers, special characters
     let userLower = confirm("Would you like to include lowercase letters?")
     let userUpper = confirm("Would you like to include uppercase letters?")
@@ -30,9 +31,21 @@ function generatePassword () {
     let userNumbers = confirm("Would you like to include numbers?")
 
   // Validate input
-    // if (userLength < "8" && userLength > "128") {
-    //   prompt("Please enter a number between 8 and 128")
-    // }
+    let userSelections = false; {
+    while (userSelections = false) 
+      if (userLower) {
+      userResults.concat(lowerCase)
+      };
+      if (userUpper) {
+      userResults.concat(upperCase)
+      };
+      if (userCharacters) {
+        userResults.concat(characters)
+      };
+      if (userNumbers) {
+        userResults.concat(numbers)
+      };
+    };
 
   //Generate password
 
